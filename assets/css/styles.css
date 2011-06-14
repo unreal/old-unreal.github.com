@@ -4,3 +4,15 @@
   border: 0;
   z-index: 100;
 }
+h1 {
+  color: #000;
+}
+h2 {
+  color: #333;
+}
+h3 {
+  color: #666;
+}
+ul.posts span {
+  color: #666;
+}
