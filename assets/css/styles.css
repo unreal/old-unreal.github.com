@@ -1,25 +1,66 @@
+body {
+  background-color: #343F4F;
+}
+
 #fork {
   position: absolute;
   top: 0; right: 0;
   border: 0;
   z-index: 100;
 }
-h1 {
-  color: #000;
+p {
+  font-size: 14px;
+  line-height: 22px;
 }
-h2 {
-  color: #333;
+h1,h2,h3,h4 {
+  line-height: 44px;
+  font-weight: normal;
+  margin: 0px;
+  padding: 0px;
 }
-h3 {
-  color: #666;
+a {
+  color: #E8574C;
 }
-ul.posts span {
-  color: #666;
+p, li { 
+  color: #fff;
 }
-.post h1 {
+ul {
+  list-style-type: none;
+  margin; 0px; padding: 0px;
+}
+li {
+  margin: 0px;
+  padding: 0px;
+  line-height: 44px;
+}
+h1, h1 a {
+  color: #fff;
   font-size: 36px;
+  text-decoration: none;
 }
-.post div.date {
-  color: #666;
-  font-style: italic;
+h2, .post h1 a {
+  color: #D9CC3C;
+  font-size: 28px;
 }
+h3, .post .date {
+  color: #E5A51B;
+  font-size: 18px;
+}
+ul.posts {
+  font-size: 28px;
+}
+ul.posts a {
+  color: #D9CC3C;
+  text-decoration: none;
+}
+ul.posts div {
+  display: inline-block;
+  width: 160px;
+  margin-right: 20px;
+  font-size: 18px;
+  color: #E5A51B;
+}
+hr {
+  border-color: #687E9E;
+}
+
