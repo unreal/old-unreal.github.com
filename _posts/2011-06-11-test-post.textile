@@ -3,6 +3,4 @@ layout: post
 title: test post
 ---
 
-h1. {{ page.title }}
-
-this is a test post.
+this is a test post.  i'm going to have to use jekyll for many more things...
