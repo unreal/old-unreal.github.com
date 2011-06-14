@@ -16,3 +16,10 @@ h3 {
 ul.posts span {
   color: #666;
 }
+.post h1 {
+  font-size: 36px;
+}
+.post div.date {
+  color: #666;
+  font-style: italic;
+}
