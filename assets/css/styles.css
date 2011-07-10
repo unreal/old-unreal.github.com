@@ -1,5 +1,23 @@
 body {
-  background-color: #343F4F;
+  background: url('/assets/images/bg.png') repeat-x #D9D9D9;
+  font-family: "Droid Sans", arial, sans-serif;
+}
+#header, div.post h1, div.post div.date {
+  font-family: "Lekton", arial, sans-serif;
+  text-transform: uppercase;
+}
+#header {
+  height: 150px;
+  line-height: 130px;
+  padding-top: 20px;
+  font-size: 36px;
+}
+#header a {
+  color: #333;
+  text-decoration: none;
+}
+#header a:hover {
+  color: #fff;
 }
 
 #fork {
@@ -8,59 +26,42 @@ body {
   border: 0;
   z-index: 100;
 }
+
 p {
-  font-size: 14px;
-  line-height: 22px;
-}
-h1,h2,h3,h4 {
-  line-height: 44px;
-  font-weight: normal;
-  margin: 0px;
-  padding: 0px;
+  font-size: 13px;
+  line-height: 24px;
+  color: #666;
 }
 a {
-  color: #E8574C;
+  color: #FF0033;
 }
-p, li { 
+a:hover {
   color: #fff;
-}
-ul {
-  list-style-type: none;
-  margin; 0px; padding: 0px;
-}
-li {
-  margin: 0px;
-  padding: 0px;
-  line-height: 44px;
-}
-h1, h1 a {
-  color: #fff;
-  font-size: 36px;
-  text-decoration: none;
-}
-h2, .post h1 a {
-  color: #D9CC3C;
-  font-size: 28px;
-}
-h3, .post .date {
-  color: #E5A51B;
-  font-size: 18px;
-}
-ul.posts {
-  font-size: 28px;
-}
-ul.posts a {
-  color: #D9CC3C;
-  text-decoration: none;
-}
-ul.posts div {
-  display: inline-block;
-  width: 160px;
-  margin-right: 20px;
-  font-size: 18px;
-  color: #E5A51B;
+  background-color: #333;
 }
 hr {
-  border-color: #687E9E;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #fff;
 }
-
+h1,h2,h3,h4 {
+  margin: 0px;
+  padding: 0px;
+  font-weight: normal;
+}
+div.post h1 {
+  font-size: 28px;
+  line-height: 28px;
+}
+div.post h1 a {
+  color: #333;
+  text-decoration: none;
+}
+div.post h1 a:hover {
+  color: #fff;
+}
+div.post div.date {
+  color: #636363;
+  font-size: 14px;
+  line-height: 14px;
+  margin-bottom: 30px;
+}
