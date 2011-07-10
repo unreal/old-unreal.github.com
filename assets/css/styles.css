@@ -2,7 +2,7 @@ body {
   background: url('/assets/images/bg.png') repeat-x #D9D9D9;
   font-family: "Droid Sans", arial, sans-serif;
 }
-#header, div.post h1, div.post div.date {
+#header, div.post h1, div.post div.date, #sidebar, #content h1{
   font-family: "Lekton", arial, sans-serif;
   text-transform: uppercase;
 }
@@ -48,15 +48,15 @@ h1,h2,h3,h4 {
   padding: 0px;
   font-weight: normal;
 }
-div.post h1 {
+#content h1 {
   font-size: 28px;
   line-height: 28px;
 }
-div.post h1 a {
+#content h1 a {
   color: #333;
   text-decoration: none;
 }
-div.post h1 a:hover {
+#content h1 a:hover {
   color: #fff;
 }
 div.post div.date {
@@ -64,4 +64,14 @@ div.post div.date {
   font-size: 14px;
   line-height: 14px;
   margin-bottom: 30px;
+}
+#sidebar ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+#sidebar ul li {
+  margin: 0px;
+  padding: 0px;
+  line-height: 24px;
 }
