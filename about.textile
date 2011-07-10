@@ -1,0 +1,13 @@
+---
+layout: default
+title: About / Jay Strybis 
+---
+
+h1. About
+
+Former robotics engineer now entrepreneur, blogging about web development, small business development and operations, robotics(?), etc.  Currently residing in Chicago.</p>
+
+* Messing around with websites, programming and graphics since ~1999.
+* Graduated from "Valparaiso University":http://www.valpo.edu with a BSEE in 2008
+* Worked as an Engineer/Product Manager for "FANUC Robotics":http://www.fanucrobotics.com from June 2008 until June 2011
+* Became fully self-employed (mostly working on "Chaptercore":http://www.chaptercore.com) in June 2011.

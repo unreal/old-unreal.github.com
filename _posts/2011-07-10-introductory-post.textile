@@ -1,0 +1,15 @@
+---
+layout: post
+title: Introductory Post 
+---
+
+I've wanted to have a blog for a long time.  I've gleaned a ton of knowledge from other blogs over the years, but I haven't given much back to the internet community.  (I did write a couple of Fireworks tutorials back in ~2000, but I'm not sure those count.)
+
+This blog should serve at least two purposes:
+
+# Teach about web development, coding, starting and running a small business, etc.
+# Document my stumblings as I attempt to develop websites, code things, start and run a small business, etc.
+
+I should probably mention that I recently (three weeks ago) left my position as a Product Manager/Engineer at "FANUC Robotics":http://www.fanucrobotics.com to focus exclusively on "Chaptercore":http://www.chaptercore.com/, my long-time side project, and other freelance projects.  I'm still adjusting to being my own boss, but I'm excited for a change and what the next few months hold.
+
+I'm shooting for one post a week.  We'll see how that goes... "my last attempt at a blog":http://iamunreal.com/ hasn't been updated since March of 2008.  Let's do this!

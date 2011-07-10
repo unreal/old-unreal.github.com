@@ -9,4 +9,5 @@ title: Jay Strybis
     <div class='date'>{{post.date | date: "%A, %d %B %Y"}}</div>
     <div class='body'>{{ post.content }}</div>
   </div>
+  {% unless forloop.last %}<hr />{% endunless %}
 {% endfor %}
