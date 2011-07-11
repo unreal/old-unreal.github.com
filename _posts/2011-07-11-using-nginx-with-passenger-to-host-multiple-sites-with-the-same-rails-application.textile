@@ -1,0 +1,37 @@
+---
+layout: post
+title: Using nginx with Passenger to host multiple sites with the same Rails application 
+---
+
+*Scenario:* You have a Rails app that hosts multiple websites on multiple domains or subdomains.  These sites may have some common assets (e.g. images, stylesheets, etc.), but they also have their own unique assets.  You want to try to serve the site's unique assets first, then try the common assets, and then finally hit the Passenger process as a last-ditch effort.
+
+I've seen people incorrectly handle this whole scenario with naming conventions or with explicit logic within their Rails app, but this is totally unnecessary.
+
+*Solution:* enter nginx's "try_files":http://wiki.nginx.org/HttpCoreModule#try_files.  This aptly-named directive allows you to try multiple locations for files (e.g. different directories for static files), and then lastly perform an internal redirect to the last parameter (probably Passenger).
+
+h2. Example nginx config:
+
+{% highlight nginx linenos %}
+server {
+  listen 80;
+  server_name site.local;
+  root /Users/dev/public_html/site.local;
+  try_files $uri $uri/.html @passenger;
+
+  location @passenger {
+    proxy_pass http://passenger.local;
+  }
+}
+
+server {
+  listen 80;
+  server_name passenger.local;
+  passenger_enabled on;
+  rails_env development;
+  root /Users/dev/rails/example_app/public;
+}
+{% endhighlight %}
+
+Of course you'll have to make sure your /etc/hosts file grabs site.local and passenger.local and points them at 127.0.0.1, but that's about it.  Assuming you type in the url *http://site.local/image.gif*, it will first try /Users/dev/public_html/site.local/image.gif, then /Users/dev/public_html/site.local/image.gif.html, then it will send that request to Passenger.  If your Rails app is setup to serve static assets, it'll try /Users/dev/rails/example_app/public/image.gif and lastly respond with a 404 if it doesn't exist.
+
+This becomes very useful when you have multiple VHOSTs using the same Rails app.  It keeps the assets completely separate on the file system, and you don't need any extra logic in your app.
